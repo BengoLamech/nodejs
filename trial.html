@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/trial.css">
+    <title>Image slider</title>
+</head>
+<body>
+    
+        <div class="slide-container">
+            <div class="slide">
+                <img src="images/technology.jpg" style="width:100%; height: 500px;"id="last" alt="slide1">
+            </div>
+            <div class="slide">
+                <img src="images/resume_headings.jpg" style="width:100%; height: 500px;"   alt="slide1">
+            </div>
+            <div class="slide">
+                <img src="images/technology.jpg" style="width:100%; height: 500px;"  alt="slide1">
+            </div>
+            <div class="slide">
+                <img src="images/resume_headings.jpg" style="width:100%; height: 500px;"id="first"   alt="slide1">
+            </div>    
+            <!---prev and next buttons-->
+            <a class="prev" onclick="plusSlides(-1)"><img src="images/prevPage.png" alt=""></a>
+            <a class="next" onclick="plusSlides(1)"><img src="images/nextpage.png" alt=""></a> 
+            
+                        
+        </div>
+        <br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+    
+    <div class="transition"><p>i am transitioning</p></div>
+    <marquee behavior="" direction="left">I am making progress</marquee>
+
+
+    <script src="Js folder/trial.js"></script>
+</body>
+</html>
